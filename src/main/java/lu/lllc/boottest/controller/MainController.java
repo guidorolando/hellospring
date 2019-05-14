@@ -12,10 +12,4 @@ public class MainController {
 	public String hello(){
 		return "hello";
 	}
-
-	@RequestMapping(method = RequestMethod.POST, name = "/save")
-	public String save(@RequestBody ExampleBody ex){
-		System.out.println(ex.getName());
-		return "llego";
-	}
 }
