@@ -13,6 +13,7 @@ public class OtherController {
     @RequestMapping(method = RequestMethod.POST, name = "/save")
     public ExampleBody save(@RequestBody ExampleBody ex){
         System.out.println(ex.getName());
+        ex.setName(ex.getName() + "response");
         return ex;
     }
 }
